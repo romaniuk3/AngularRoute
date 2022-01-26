@@ -10,3 +10,11 @@ nav button:visited, button:link {
 nav button.active {
     color: #039be5;
 }
+.items {
+    display: flex;
+    justify-content: center;
+}
+.items li {
+    font-size: 2rem;
+    margin-left: 30px;
+}
