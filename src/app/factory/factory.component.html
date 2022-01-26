@@ -1,0 +1,9 @@
+<ul
+  class="items"
+  style="text-align: center; margin-top: 50px; list-style-type: none"
+>
+  <li (click)="showFactories(factory)" *ngFor="let factory of factories">
+    <span>Factory №{{ factory.id }}</span>
+  </li>
+</ul>
+
