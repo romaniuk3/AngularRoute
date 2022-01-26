@@ -12,7 +12,10 @@ const routes: Routes = [
     children: [
       { path: 'workers', component: WorkersComponent },
       { path: 'workers/:id', component: WorkersDetailComponent },
-      { path: 'products', component: ProductsComponent }
+      { 
+        path: 'products', component: ProductsComponent, 
+        loadChildren: () => import('../delete-product/delete-product.module').then(m => m.DeleteProductModule)
+      }
     ]
   },
 ];

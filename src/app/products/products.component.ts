@@ -17,4 +17,8 @@ export class ProductsComponent implements OnInit {
     this.router.navigate(['add'], {relativeTo: this.route});
   }
 
+  deleteProduct(id: number) {
+    this.router.navigate([`delete/${id}`], {relativeTo: this.route});
+  }
+
 }
